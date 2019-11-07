@@ -2427,4 +2427,4 @@ async def on_message(message):
     await ctx.send(f"Your {pn} has evolved into a {evo}!")
     await bot.db.release(pconn)
 
-    await client.login('NDY5MTc2NDgwMDQ4MzQ5MjA2.XcP8eA.tdocSz0ZM_whelWWGQdw9y4sSEY')
+    client.login('NDY5MTc2NDgwMDQ4MzQ5MjA2.XcP8eA.tdocSz0ZM_whelWWGQdw9y4sSEY')
