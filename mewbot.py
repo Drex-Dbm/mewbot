@@ -2429,4 +2429,4 @@ async def on_message(message):
 
         
         
-client.login('token')
+await client.login('token')
