@@ -214,7 +214,7 @@ async def help(ctx, val=None):
         e = discord.Embed(title="Trading Tutorial", color=0xeee657)
         e.add_field(name="`;trade`", value="`;trade @User <credits_amount> <their_pokemon_number>`")
         e.add_field(name="`;gift` to give someone credits", valu
-    embed = discord.Embed(title="Donation Perks")e="`;gift @User <credit_amount>`")
+        e = discord.Embed(title="Donation Perks")e="`;gift @User <credit_amount>`")
         e.add_field(name="`;give` to give someone a Pokemon", value="`;give @User <your_pokemon_number>`")
         e.add_field(name="`;giveredeem` to give someone redeems!", value="`;giveredeem @User <number_of_redeems>`")
         await ctx.send(embed=e)
