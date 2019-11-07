@@ -213,7 +213,8 @@ async def help(ctx, val=None):
     elif val == 'trading':
         e = discord.Embed(title="Trading Tutorial", color=0xeee657)
         e.add_field(name="`;trade`", value="`;trade @User <credits_amount> <their_pokemon_number>`")
-        e.add_field(name="`;gift` to give someone credits", value="`;gift @User <credit_amount>`")
+        e.add_field(name="`;gift` to give someone credits", valu
+    embed = discord.Embed(title="Donation Perks")e="`;gift @User <credit_amount>`")
         e.add_field(name="`;give` to give someone a Pokemon", value="`;give @User <your_pokemon_number>`")
         e.add_field(name="`;giveredeem` to give someone redeems!", value="`;giveredeem @User <number_of_redeems>`")
         await ctx.send(embed=e)
@@ -366,7 +367,6 @@ async def donate(ctx):
     e = discord.Embed(title="Want to Donate to the Bot?", color=0xffb6c1)
     e.add_field(name="DM Dylee#6669 or Join the Official Server Here!", value="[Here!](https://invite.gg/pokeglobe)")
     await ctx.send(embed=e)
-    embed = discord.Embed(title="Donation Perks")
     embed.add_field(name="Every Dollar Donated = 2 Redeems", value="510 EV Points to Add to a Pokemon")
     embed.add_field(name="Every Dollar Donated = 50,000ℳCredits", value="Donator Rank in the PokeGlobe Server")
     embed.add_field(name="100 Redeems", value="Gives You a Perfect Pokemon")
@@ -2430,4 +2430,4 @@ async def on_message(message):
         
         
 
-client.run(TOKEN)
+client.login('token')
