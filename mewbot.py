@@ -213,8 +213,8 @@ async def help(ctx, val=None):
     elif val == 'trading':
         e = discord.Embed(title="Trading Tutorial", color=0xeee657)
         e.add_field(name="`;trade`", value="`;trade @User <credits_amount> <their_pokemon_number>`")
-        e.add_field(name="`;gift` to give someone credits", value="`;gift @User <credit_amount>`")
-        e = discord.Embed(title="Donation Perks")
+        e.add_field(name="`;gift` to give someone credits", valu
+        e = discord.Embed(title="Donation Perks")e="`;gift @User <credit_amount>`")
         e.add_field(name="`;give` to give someone a Pokemon", value="`;give @User <your_pokemon_number>`")
         e.add_field(name="`;giveredeem` to give someone redeems!", value="`;giveredeem @User <number_of_redeems>`")
         await ctx.send(embed=e)
@@ -2426,5 +2426,8 @@ async def on_message(message):
     await pconn.execute("UPDATE pokes SET pokename = $1 WHERE selected = 1 AND ownerid = $2", evo, ctx.author.id)
     await ctx.send(f"Your {pn} has evolved into a {evo}!")
     await bot.db.release(pconn)
+
+        
+        
 
     client.login('NDY5MTc2NDgwMDQ4MzQ5MjA2.XcP8eA.tdocSz0ZM_whelWWGQdw9y4sSEY')
