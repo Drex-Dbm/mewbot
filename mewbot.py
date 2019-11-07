@@ -35,7 +35,7 @@ logging.basicConfig(level="INFO")
 bot = commands.Bot(command_prefix=";")
 version = ("0.0.5c Beta Build")
 
-TOKEN = os.environ['TOKEN']
+TOKEN = os.environ['NDY5MTc2NDgwMDQ4MzQ5MjA2.XcPMYw.i-kUD4JlV8VA3mtwg1NkAvRpiZc']
 dburl = os.environ['DATABASE_URL']
 dbltoken = os.environ['dbltoken']
 
